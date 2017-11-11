@@ -38,7 +38,7 @@ ENV LANG=C.UTF-8
 
 # install git
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+    apk add --no-cache curl bash git openssh
 
 # specify the version string of the oc release
 ENV OC_VERSION "v3.6.0"
